@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/user_menu_action_home"
+            android:title="@string/home"
+            android:checked="true"
+            android:icon="@drawable/ic_account_balance_24dp"
+            />
+        <item
+            android:id="@+id/user_menu_action_login"
+            android:title="@string/login"
+            android:checked="false"
+            android:icon="@drawable/ic_arrow_forward_24dp"
+            />
+        <item android:id="@+id/user_menu_action_edit_data"
+            android:title="@string/edit_data"
+            android:checked="false"
+            android:icon="@drawable/ic_settings_24dp"
+            />
+        <item android:id="@+id/user_menu_action_your_orders"
+            android:title="@string/your_orders"
+            android:checked="false"
+            android:icon="@drawable/ic_orders_24dp"
+            />
+        <item
+            android:id="@+id/user_menu_action_chat"
+            android:title="@string/mssgs"
+            android:checked="false"
+            android:icon="@drawable/ic_caht_24dp"
+            />
+        <item
+            android:id="@+id/user_menu_action_share"
+            android:title="@string/share_app"
+            android:checked="false"
+            android:icon="@drawable/ic_share_24dp"
+            />
+        <item
+            android:id="@+id/user_menu_action_logout"
+            android:title="@string/logout"
+            android:checked="false"
+            android:icon="@drawable/ic_arrow_back_24dp"
+            />
+
+
+
+
+
+
+    </group>
+</menu>

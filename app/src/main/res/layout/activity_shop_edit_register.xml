@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="0dp" android:contentDescription="TODO" 
+        android:layout_height="match_parent"
+        android:layout_weight="0.15" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent" android:contentDescription="TODO" 
+            android:layout_height="0dp"
+            android:layout_weight="0.03" />
+
+        <!-- Owner name -->
+        <EditText
+            android:id="@+id/etShopEditOwnerName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.1"
+            android:background="@drawable/edittextbg"
+            android:gravity="center"
+            android:hint="@string/shopownername"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hintColor" />
+
+        <ImageView
+            android:layout_width="match_parent" android:contentDescription="TODO" 
+            android:layout_height="0dp"
+            android:layout_weight="0.04" />
+
+        <!-- Owner mail -->
+        <EditText
+            android:id="@+id/etShopEditOwnerEmail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.1"
+            android:background="@drawable/edittextbg"
+            android:gravity="center"
+            android:hint="@string/shopownermail"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hintColor" />
+
+        <ImageView
+            android:layout_width="match_parent" android:contentDescription="TODO" 
+            android:layout_height="0dp"
+            android:layout_weight="0.05" />
+
+        <!-- Owner username -->
+        <EditText
+            android:id="@+id/etShopEditOwnerUsername"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.1"
+            android:background="@drawable/edittextbg"
+            android:gravity="center"
+            android:hint="@string/shopownerusername"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hintColor" />
+
+        <ImageView
+            android:layout_width="match_parent" android:contentDescription="TODO" 
+            android:layout_height="0dp"
+            android:layout_weight="0.08" />
+
+        <Button
+            android:id="@+id/btnShopEditRegister"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.1"
+            android:background="@drawable/btnbg"
+            android:gravity="center"
+            android:text="@string/editbtn"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:layout_width="match_parent" android:contentDescription="TODO" 
+            android:layout_height="0dp"
+            android:layout_weight="0.1" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="0dp" android:contentDescription="TODO" 
+        android:layout_height="match_parent"
+        android:layout_weight="0.15" />
+
+</LinearLayout>

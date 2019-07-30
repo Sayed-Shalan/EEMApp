@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/overlay"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent" android:contentDescription="TODO" 
+        android:layout_height="0dp"
+        android:layout_weight="0.15" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.55"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp" android:contentDescription="TODO" 
+            android:layout_height="match_parent"
+            android:layout_weight="0.2" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent" android:contentDescription="TODO" 
+                android:layout_height="0dp"
+                android:layout_weight="0.13" />
+
+            <!-- EditText UserName -->
+            <EditText
+                android:id="@+id/etEditRUserName"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.14"
+                android:background="@drawable/edittextbg"
+                android:gravity="center"
+                android:hint="@string/username"
+                android:inputType="text"
+                android:textColor="@color/white"
+                android:textColorHint="@color/hintColor" />
+
+            <ImageView
+                android:layout_width="match_parent" android:contentDescription="TODO" 
+                android:layout_height="0dp"
+                android:layout_weight="0.03" />
+
+            <!-- EditText Email -->
+            <EditText
+                android:id="@+id/etEditRUserEmail"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.14"
+                android:background="@drawable/edittextbg"
+                android:gravity="center"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/white"
+                android:textColorHint="@color/hintColor" />
+
+            <ImageView
+                android:layout_width="match_parent" android:contentDescription="TODO" 
+                android:layout_height="0dp"
+                android:layout_weight="0.06" />
+
+            <!-- EditText phone -->
+            <EditText
+                android:id="@+id/etEditRUserPhone"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.14"
+                android:background="@drawable/edittextbg"
+                android:gravity="center"
+                android:hint="@string/phone"
+                android:inputType="phone"
+                android:textColor="@color/white"
+                android:textColorHint="@color/hintColor" />
+
+            <ImageView
+                android:layout_width="match_parent" android:contentDescription="TODO" 
+                android:layout_height="0dp"
+                android:layout_weight="0.16" />
+
+            <!-- Button Sign in -->
+            <Button
+                android:id="@+id/btnEditRUserSignup"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:background="@drawable/btnbg"
+                android:gravity="center"
+                android:text="@string/editbtn"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp" android:contentDescription="TODO" 
+            android:layout_height="match_parent"
+            android:layout_weight="0.2" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent" android:contentDescription="TODO" 
+        android:layout_height="0dp"
+        android:layout_weight="0.4" />
+
+</LinearLayout>

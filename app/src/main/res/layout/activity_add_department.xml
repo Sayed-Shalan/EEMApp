@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent" android:contentDescription="TODO" 
+        android:layout_height="0dp"
+        android:layout_weight="0.15" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.1"
+        android:gravity="center"
+        android:text="@string/adddepartment"
+        android:textSize="@dimen/txtHeader" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp" android:contentDescription="TODO" 
+            android:layout_height="match_parent"
+            android:layout_weight="0.15" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent" android:contentDescription="TODO" 
+                android:layout_height="0dp"
+                android:layout_weight="0.3" />
+
+            <!-- Shop Department Name -->
+            <EditText
+                android:id="@+id/etShopDepartmentName"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.15"
+                android:textSize="12sp"
+                android:background="@drawable/edittextbg"
+                android:gravity="center"
+                android:hint="@string/departmentname"
+                android:inputType="" android:textColor="@color/white"
+                android:textColorHint="@color/hintColor" />
+
+            <ImageView
+                android:layout_width="match_parent" android:contentDescription="TODO" 
+                android:layout_height="0dp"
+                android:layout_weight="0.1" />
+
+            <Button
+                android:id="@+id/btnShopAddDepartment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.15"
+                android:background="@drawable/btnbg"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:text="@string/addbtn"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:layout_width="match_parent" android:contentDescription="TODO" 
+                android:layout_height="0dp"
+                android:layout_weight="0.3" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp" android:contentDescription="TODO" 
+            android:layout_height="match_parent"
+            android:layout_weight="0.15" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent" android:contentDescription="TODO" 
+        android:layout_height="0dp"
+        android:layout_weight="0.15" />
+
+</LinearLayout>

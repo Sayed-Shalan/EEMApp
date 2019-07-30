@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/EEMAPP.iml" filepath="$PROJECT_DIR$/EEMAPP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/EEMAPP-common.iml" filepath="$PROJECT_DIR$/common/EEMAPP-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commonwidget/EEMAPP-commonwidget.iml" filepath="$PROJECT_DIR$/commonwidget/EEMAPP-commonwidget.iml" />
+      <module fileurl="file://$PROJECT_DIR$/panowidget/EEMAPP-panowidget.iml" filepath="$PROJECT_DIR$/panowidget/EEMAPP-panowidget.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gvr-android-sdk/libraries/audio/audio.iml" filepath="$PROJECT_DIR$/gvr-android-sdk/libraries/audio/audio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gvr-android-sdk/libraries/base/base.iml" filepath="$PROJECT_DIR$/gvr-android-sdk/libraries/base/base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gvr-android-sdk/libraries/gvr-android-sdk_libraries.iml" filepath="$PROJECT_DIR$/gvr-android-sdk/libraries/gvr-android-sdk_libraries.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gvr-android-sdk/libraries/common/gvr-android-sdk_libraries-common.iml" filepath="$PROJECT_DIR$/gvr-android-sdk/libraries/common/gvr-android-sdk_libraries-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gvr-android-sdk/libraries/commonwidget/gvr-android-sdk_libraries-commonwidget.iml" filepath="$PROJECT_DIR$/gvr-android-sdk/libraries/commonwidget/gvr-android-sdk_libraries-commonwidget.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gvr-android-sdk/libraries/panowidget/gvr-android-sdk_libraries-panowidget.iml" filepath="$PROJECT_DIR$/gvr-android-sdk/libraries/panowidget/gvr-android-sdk_libraries-panowidget.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gvr-android-sdk/libraries/videowidget/videowidget.iml" filepath="$PROJECT_DIR$/gvr-android-sdk/libraries/videowidget/videowidget.iml" />
+    </modules>
+  </component>
+</project>

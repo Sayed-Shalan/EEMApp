@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/f_bk">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent" android:contentDescription="TODO" 
+            android:layout_height="0dp"
+            android:layout_weight="0.45" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.45"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp" android:contentDescription="TODO" 
+                android:layout_height="match_parent"
+                android:layout_weight="0.2" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:orientation="vertical">
+
+                <!-- EditText UserName -->
+                <EditText
+                    android:id="@+id/etRUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.14"
+                    android:background="@drawable/edittextbg"
+                    android:gravity="center"
+                    android:hint="@string/username"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/hintColor" />
+
+                <ImageView
+                    android:layout_width="match_parent" android:contentDescription="TODO" 
+                    android:layout_height="0dp"
+                    android:layout_weight="0.03" />
+
+                <!-- EditText Password -->
+                <EditText
+                    android:id="@+id/etRUserPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.14"
+                    android:background="@drawable/edittextbg"
+                    android:gravity="center"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/hintColor" />
+
+                <ImageView
+                    android:layout_width="match_parent" android:contentDescription="TODO" 
+                    android:layout_height="0dp"
+                    android:layout_weight="0.03" />
+
+                <!-- EditText Confirm -->
+                <EditText
+                    android:id="@+id/etRUserConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.14"
+                    android:background="@drawable/edittextbg"
+                    android:gravity="center"
+                    android:hint="@string/confirm"
+                    android:inputType="textPassword"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/hintColor" />
+
+                <ImageView
+                    android:layout_width="match_parent" android:contentDescription="TODO" 
+                    android:layout_height="0dp"
+                    android:layout_weight="0.03" />
+
+                <!-- EditText Email -->
+                <EditText
+                    android:id="@+id/etRUserEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.14"
+                    android:background="@drawable/edittextbg"
+                    android:gravity="center"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/hintColor" />
+
+                <ImageView
+                    android:layout_width="match_parent" android:contentDescription="TODO" 
+                    android:layout_height="0dp"
+                    android:layout_weight="0.03" />
+
+                <!-- EditText phone -->
+                <EditText
+                    android:id="@+id/etRUserPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.14"
+                    android:background="@drawable/edittextbg"
+                    android:gravity="center"
+                    android:hint="@string/phone"
+                    android:inputType="phone"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/hintColor" />
+
+                <ImageView
+                    android:layout_width="match_parent" android:contentDescription="TODO" 
+                    android:layout_height="0dp"
+                    android:layout_weight="0.03" />
+
+                <!-- Button Sign in -->
+                <Button
+                    android:id="@+id/btnRUserSignup"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/btnbg"
+                    android:gravity="center"
+                    android:text="@string/btnRegister"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:layout_width="match_parent" android:contentDescription="TODO" 
+                    android:layout_height="0dp"
+                    android:layout_weight="0.05" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp" android:contentDescription="TODO" 
+                android:layout_height="match_parent"
+                android:layout_weight="0.2" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent" android:contentDescription="TODO" 
+            android:layout_height="0dp"
+            android:layout_weight="0.1" />
+    </LinearLayout>
+
+</RelativeLayout>

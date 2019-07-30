@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flipboard.bottomsheet.BottomSheetLayout
+    android:id="@+id/client_home_bottomsheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/shop_closeTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/closed_bck"
+            android:visibility="invisible"
+            android:scaleType="fitXY"/>
+        <FrameLayout
+            android:id="@+id/shop_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:id="@+id/imgClientShopProfileLogo"
+                android:layout_width="match_parent"
+                android:contentDescription="TODO" android:scaleType="fitXY"
+                android:layout_height="match_parent"
+                android:visibility="invisible"
+                android:src="@drawable/logo_home" />
+            <FrameLayout
+                android:id="@+id/pano_view"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:scrollbars="none"
+                android:contentDescription="@string/mssgs"/>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+
+
+
+                <FrameLayout
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_gravity="right">
+                        <ImageView
+                            android:id="@+id/scalePanoramaIc"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:contentDescription="TODO" android:elevation="8dp"
+                            android:layout_gravity="right"
+                            android:src="@drawable/ic_open_with_24dp"
+                            />
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/addressLinear"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="50dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0.2"
+                        android:background="@drawable/rect_black_no_border"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/txtClientShopProfileAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:layout_marginRight="5dp"
+                            android:textSize="18sp"/>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription="TODO" android:src="@drawable/ic_location_on_white_24dp"
+                            />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/phoneLinear"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:layout_height="50dp">
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:alpha="0.6"
+                                    android:background="@drawable/rect_black_no_border"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="right"
+                                    android:layout_marginRight="10dp"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:textColor="@color/white"
+                                        android:textStyle="bold"
+                                        android:layout_marginRight="5dp"
+                                        android:textSize="18sp"
+                                        android:text="اتصال عبر الهاتف"/>
+                                    <ImageView
+                                        android:id="@+id/imgClientShopPhone"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:contentDescription="TODO" android:src="@drawable/ic_mobile_white_24dp"
+                                        />
+
+                                </LinearLayout>
+
+
+
+                            </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/map_linear"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="50dp">
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0.6"
+                        android:background="@drawable/rect_black_no_border"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:layout_marginRight="5dp"
+                            android:textSize="18sp"
+                            android:text="مشاهدة الطريق عبر الخريطة"/>
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription="TODO" android:src="@drawable/ic_map_placeholder_white_24"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/llClientShopVideo"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="50dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0.6"
+                        android:background="@drawable/rect_black_no_border"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:layout_marginRight="5dp"
+                            android:textSize="18sp"
+                            android:text="جولة واقعية داخل المكان 360"/>
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription="TODO" android:src="@drawable/ic_360_image_white_24dp"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/llClientShopProduct"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="50dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0.6"
+                        android:background="@drawable/rect_black_no_border"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:layout_marginRight="5dp"
+                            android:textSize="18sp"
+                            android:text="الأقسام و المنتجات"/>
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription="TODO" android:src="@drawable/ic_products_white_24dp"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/llClientShopOffer"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="50dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0.6"
+                        android:background="@drawable/rect_black_no_border"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:layout_marginRight="5dp"
+                            android:textSize="18sp"
+                            android:text="التخفيضات و العروض"/>
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription="TODO" android:src="@drawable/sale"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/llClientShopChat"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="50dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0.6"
+                        android:background="@drawable/rect_black_no_border"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:layout_marginRight="5dp"
+                            android:textSize="18sp"
+                            android:text="محادثة"/>
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription="TODO" android:src="@drawable/ic_chat_white_24dp"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/shopProfileShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_share_white_24dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:elevation="6dp"
+            android:layout_marginBottom="5dp"
+            app:backgroundTint="@color/colorAccent"
+            android:layout_gravity="bottom"
+            app:borderWidth="0dp"
+            app:elevation="6dp"
+            app:fabSize="normal" />
+
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</com.flipboard.bottomsheet.BottomSheetLayout>

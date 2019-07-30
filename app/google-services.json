@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "727509562394",
+    "firebase_url": "https://eemapp-203420.firebaseio.com",
+    "project_id": "eemapp-203420",
+    "storage_bucket": "eemapp-203420.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727509562394:android:497b5aa7d9f74ddc",
+        "android_client_info": {
+          "package_name": "com.dasta.eemapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "727509562394-984dueu1dmvl1n1fcli10s70v7tvi7pf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dasta.eemapp",
+            "certificate_hash": "3d16a1648ccd7c29226a6e978d139138d5b729e5"
+          }
+        },
+        {
+          "client_id": "727509562394-f00hjrjmvkt11lvbqsofomufc9io5kj0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbT7CH5JYqbGal7FMQM30qqF3i-Fa5s1c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "727509562394-f00hjrjmvkt11lvbqsofomufc9io5kj0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

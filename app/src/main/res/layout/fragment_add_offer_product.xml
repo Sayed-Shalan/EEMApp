@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent" android:contentDescription="TODO" 
+        android:layout_height="0dp"
+        android:layout_weight="0.15" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp" android:contentDescription="TODO" 
+            android:layout_height="match_parent"
+            android:layout_weight="0.15" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent" android:contentDescription="TODO" 
+                android:layout_height="0dp"
+                android:layout_weight="0.25" />
+
+            <!-- Shop Department Name -->
+            <EditText
+                android:id="@+id/etOfferSellPriceProduct"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.15"
+                android:background="@drawable/edittextbg"
+                android:gravity="center"
+                android:hint="@string/offersellprice"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/hintColor" />
+
+            <ImageView
+                android:layout_width="match_parent" android:contentDescription="TODO" 
+                android:layout_height="0dp"
+                android:layout_weight="0.1" />
+
+            <EditText
+                android:id="@+id/etOfferSalePriceProduct"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.15"
+                android:background="@drawable/edittextbg"
+                android:gravity="center"
+                android:hint="@string/offersaleprice"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/hintColor" />
+
+            <ImageView
+                android:layout_width="match_parent" android:contentDescription="TODO" 
+                android:layout_height="0dp"
+                android:layout_weight="0.1" />
+
+            <Button
+                android:id="@+id/btnShopAddOfferProduct"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.15"
+                android:background="@drawable/btnbg"
+                android:gravity="center"
+                android:text="@string/addbtn"
+                android:textSize="15sp"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:layout_width="match_parent" android:contentDescription="TODO" 
+                android:layout_height="0dp"
+                android:layout_weight="0.1" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp" android:contentDescription="TODO" 
+            android:layout_height="match_parent"
+            android:layout_weight="0.15" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent" android:contentDescription="TODO" 
+        android:layout_height="0dp"
+        android:layout_weight="0.15" />
+
+</LinearLayout>

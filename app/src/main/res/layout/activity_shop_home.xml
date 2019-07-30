@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flipboard.bottomsheet.BottomSheetLayout
+    android:id="@+id/shop_bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- Shop Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:background="@color/mycolorPrimary"
+                android:orientation="horizontal">
+
+                <!-- Image Drawer -->
+                <ImageView
+                    android:id="@+id/imgShopDrawer"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.15"
+                    android:contentDescription="TODO" android:src="@drawable/ic_drawer" />
+
+                <!-- Image Home -->
+                <ImageView
+                    android:id="@+id/imgShopHome"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.15"
+                    android:contentDescription="TODO" android:src="@drawable/ic_home" />
+
+                <!-- Shop Home Title -->
+                <TextView
+                    android:id="@+id/txtShopHomeTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.35"
+                    android:gravity="center"
+                    android:text="test"
+                    android:textColor="@color/txtTitleColor"
+                    android:textSize="@dimen/txtHeader" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.20"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:contentDescription="TODO" android:src="@drawable/ic_eye" />
+
+                    <TextView
+                        android:id="@+id/txtShopView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <!-- Category Icon -->
+                <ImageView
+                    android:id="@+id/imgShopCategory"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.15"
+                    android:contentDescription="TODO" android:src="@drawable/ic_category" />
+
+                <!-- Image Logout -->
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/fShopHomeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.9" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- The navigation drawer left -->
+
+    <RelativeLayout
+        android:id="@+id/drawerLeft"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left">
+
+        <!-- Profile Box -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_shop"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.35"
+                android:background="@color/barBg"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgShopLogo"
+                    android:layout_width="match_parent" android:contentDescription="TODO" 
+                    android:layout_height="0dp"
+                    android:layout_weight="0.6" />
+
+                <ImageView
+                    android:id="@+id/imgShopImageEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2"
+                    android:contentDescription="TODO" android:src="@drawable/ic_edit"
+                    android:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/txtNavTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <!-- List of Actions (pages) -->
+
+            <ListView
+                android:id="@+id/navListLeft"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.65"
+                android:choiceMode="singleChoice"
+                android:divider="#ffffff"
+                android:fadeScrollbars="false"
+                android:scrollbarSize="2dp"
+                android:scrollbarThumbVertical="@android:color/white" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>
+    </com.flipboard.bottomsheet.BottomSheetLayout>

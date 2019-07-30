@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dasta.eemapp"
+    android:installLocation="auto">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="com.example.maptest.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <permission
+        android:name="com.example.maptest.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".helper.AppController"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/logo_home"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/logo_home"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        tools:replace="android:supportsRtl">
+
+        <!--
+            The API key for Google Maps-based APIs is defined as a string resource.
+            (See the file "res/values/google_maps_api.xml").
+            Note that the API key is linked to the encryption key used to sign the APK.
+            You need a different API key for each encryption key, including the release key that is used to
+            sign the APK for publishing.
+            You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+
+        <service
+            android:name=".helper.FcmMessagingService"
+            android:permission="">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider248253129080231"
+            android:exported="true" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+        <!-- Main Data -->
+        <activity
+            android:name=".activity.Splash"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="com.google.intent.category.CARDBOARD" />
+            </intent-filter>
+
+            <!-- Branch URI scheme -->
+            <intent-filter
+                android:autoVerify="true"
+                android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "http://www.example.com/gizmos” -->
+                <data
+                    android:host="dasta.net"
+                    android:pathPrefix="/data/eem/Client/redirect_splash.php"
+                    android:scheme="http" />
+                <!-- note that the leading "/" is required for pathPrefix -->
+            </intent-filter>
+            <intent-filter
+                android:autoVerify="true"
+                android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "example://gizmos” -->
+                <data
+                    android:host="gizmos"
+                    android:scheme="example" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.Category"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!-- Client -->
+        <activity
+            android:name=".activity.Client.Home"
+            android:configChanges="keyboardHidden"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+
+            <!-- Branch URI scheme -->
+            <intent-filter
+                android:autoVerify="true"
+                android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "http://www.example.com/gizmos” -->
+                <data
+                    android:host="dasta.net"
+                    android:pathPrefix="/data/eem/Client/redirect_shop_profile.php"
+                    android:scheme="http" />
+                <!-- note that the leading "/" is required for pathPrefix -->
+            </intent-filter>
+            <intent-filter
+                android:autoVerify="true"
+                android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "http://www.example.com/gizmos” -->
+                <data
+                    android:host="dasta.net"
+                    android:pathPrefix="/data/eem/Client/redirect_shop_profile_second.php"
+                    android:scheme="http" />
+                <!-- note that the leading "/" is required for pathPrefix -->
+            </intent-filter>
+            <intent-filter
+                android:autoVerify="true"
+                android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "example://gizmos” -->
+                <data
+                    android:host="gizmos/post"
+                    android:scheme="example" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.Client.Home_Shop"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="keyboardHidden"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait">
+
+            <!-- Branch URI scheme -->
+            <intent-filter
+                android:autoVerify="true"
+                android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "http://www.example.com/gizmos” -->
+                <data
+                    android:host="dasta.net"
+                    android:pathPrefix="/data/eem/Client/redirect_single_product.php"
+                    android:scheme="http" />
+                <!-- note that the leading "/" is required for pathPrefix -->
+            </intent-filter>
+            <intent-filter
+                android:autoVerify="true"
+                android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "example://gizmos” -->
+                <data
+                    android:host="gizmos/postpro"
+                    android:scheme="example" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.Client.Login"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Client.Register"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Client.UserProfile"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!-- Services -->
+
+        <activity
+            android:name=".activity.Services.Login"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Services.Register"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!-- Shop -->
+        <activity
+            android:name=".activity.Shop.Home"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Shop.EditShopImage"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Shop.EditProductImage"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Shop.Login"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Shop.Register"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Shop.ContinueData"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Shop.AddProduct"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Shop.Report"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.Shop.UpdateLocation"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Shop.ChangePassword"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Shop.ShopOpen"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Shop.EditContinueData"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Shop.EditRegister"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Shop.EditProduct"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Shop.Order"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Shop.Chat"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Client.Video"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MapActivity"></activity>
+        <activity android:name=".PanoramaActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.google.intent.category.CARDBOARD" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity android:name=".ShowPanoramaActivity"></activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="866b9257446d437912e1395b2b5efa9b4555e191" />
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="false" />
+    </application>
+
+</manifest>

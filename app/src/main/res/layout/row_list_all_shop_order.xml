@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edittextbg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false" android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgSOrderPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_phone"
+                        android:tint="@color/hintColor"
+                        app:civ_border_color="@color/hintColor"
+                        app:civ_border_width="2dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtSOrderState"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="tttt"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.65"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtSOrderPName"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center|right"
+                    android:layout_weight="0.25"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/cellText_padding"
+                    android:text="ttt"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/txtSOrderSName"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center|right"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/cellText_padding"
+                    android:text="ttt"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/txtOrderQuantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center|right"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/cellText_padding"
+                    android:text="ttt"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/txtSOrderPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center|right"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/cellText_padding"
+                    android:text="ttt"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/txtSOrderPCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center|right"
+                    android:layout_weight="0.25"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/cellText_padding"
+                    android:text="ننن"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgSOrderProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/logo_home"
+                    android:tint="@color/hintColor"
+                    app:civ_border_color="@color/hintColor"
+                    app:civ_border_width="2dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

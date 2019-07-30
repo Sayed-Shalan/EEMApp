@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flipboard.bottomsheet.BottomSheetLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.dasta.eemapp.PanoramaActivity">
+
+<android.support.design.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/pano_view"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:contentDescription="@string/mssgs"/>
+    <TextView
+        android:id="@+id/no_photosTxt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:gravity="center"
+        android:text="لا يوجد صور حاليا"/>
+    <ImageView
+        android:src="@drawable/ic_more_vert_black_24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/moreImg"
+        android:layout_gravity="top|right"
+        android:layout_margin="16dp"/>
+
+    <!--
+        <com.gjiazhe.panoramaimageview.PanoramaImageView
+            android:id="@+id/panorama_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:piv_enablePanoramaMode="true"
+            app:piv_show_scrollbar="true"
+            android:layout_marginBottom="80dp"
+            android:src="@drawable/panorama"
+            app:piv_invertScrollDirection="true"
+            android:scaleType="centerCrop" />
+        -->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="2dp"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        app:cardElevation="4dp"
+        >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/panorama_recyclerView"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+    </android.support.v7.widget.CardView>
+</android.support.design.widget.CoordinatorLayout>
+</com.flipboard.bottomsheet.BottomSheetLayout>

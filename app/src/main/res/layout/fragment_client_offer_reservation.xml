@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgOfferReservationImage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:contentDescription="TODO" android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.8">
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/imgOfferReservationLogo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/logo_home"
+                        app:civ_border_color="@color/hintColor"
+                        app:civ_border_width="2dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgOfferReservationPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_phone"
+                        android:tint="@color/hintColor"
+                        app:civ_border_color="@color/hintColor"
+                        app:civ_border_width="2dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtOfferReservationPData"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.7"
+                android:gravity="center|right"
+                android:text="ttt"
+                android:textColor="@color/hintColor"
+                android:textSize="@dimen/cellText_textSize" />
+
+            <TextView
+                android:id="@+id/txtOfferReservationSData"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.3"
+                android:gravity="center|right"
+                android:text="ttt"
+                android:textColor="@color/hintColor"
+                android:textSize="@dimen/cellText_textSize" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spOfferReservationQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+
+        <EditText
+            android:id="@+id/etClientOfferReservation"
+            android:layout_width="match_parent" android:inputType="" 
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="Additional Data !!!" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnOfferReservation"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:background="@drawable/btnbg"
+            android:gravity="center"
+            android:text="@string/reservationProduct"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnOfferShip"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:textAllCaps="false"
+            android:background="@drawable/btnbg"
+            android:gravity="center"
+            android:text="@string/shipProduct"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

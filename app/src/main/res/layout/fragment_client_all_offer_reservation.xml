@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.6"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgAllOfferReservationImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@color/hintColor"
+            android:contentDescription="TODO" android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false" android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/imgAllOfferReservationLogo"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/logo_home"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    app:civ_border_color="@color/hintColor"
+                    app:civ_border_width="2dp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgAllOfferReservationPhone"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/ic_phone"
+                    android:layout_gravity="right"
+                    android:tint="@color/hintColor"
+                    app:civ_border_color="@color/hintColor"
+                    app:civ_border_width="2dp" />
+
+            </FrameLayout>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:background="@color/overlay"
+            android:padding="@dimen/cellText_padding">
+            <TextView
+                android:id="@+id/txtProductReservationPDataTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:text="اسم الصنف"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <TextView
+                    android:id="@+id/txtProductReservationPDataPrice"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor"
+                    android:gravity="left"
+                    android:text="250 EGP"
+                    android:textSize="12sp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor"
+                    android:gravity="right"
+                    android:layout_marginLeft="15dp"
+                    android:text="السعر"
+                    android:textSize="13sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <TextView
+                    android:id="@+id/txtProductReservationPDataDesc"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor"
+                    android:gravity="left"
+                    android:text="وصف الصنف بالتفاصيل"
+                    android:textSize="12sp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor"
+                    android:gravity="right"
+                    android:layout_marginLeft="15dp"
+                    android:text="الوصف"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <TextView
+                    android:id="@+id/txtProductReservationPDataLocation"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor"
+                    android:gravity="left"
+
+                    android:text="عنوان الموقع الذي يقع به المحل"
+                    android:textSize="12sp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor"
+                    android:gravity="right"
+                    android:layout_marginLeft="15dp"
+                    android:text="العنوان"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.15"
+    android:gravity="right"
+    android:weightSum="4">
+    <Spinner
+        android:id="@+id/spAllOfferReservationQuantity"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="3" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center|right"
+        android:layout_marginLeft="5dp"
+        android:text="الكمية المطلوبة"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="15sp" />
+
+
+</LinearLayout>
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.1">
+
+    <EditText
+        android:id="@+id/etClientAllOfferReservation"
+        android:layout_width="match_parent" android:inputType="" 
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:hint="أضف تعليق.." />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.3"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnAllOfferReservation"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.2"
+        android:background="@drawable/btnbg"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="الحجز متاح / 24 ساعة"
+        android:textSize="15sp"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnAllOfferShip"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="0.2"
+        android:visibility="invisible"
+        android:textStyle="bold"
+        android:background="@drawable/btnbg"
+        android:gravity="center"
+        android:text="اطلبها من ايم/EEM"
+        android:textSize="15sp"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>
+
+</LinearLayout>

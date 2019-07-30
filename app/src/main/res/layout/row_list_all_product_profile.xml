@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/gridView_cellWidth"
+    android:layout_height="@dimen/gridView_cellHeight">
+
+    <ImageView
+        android:id="@+id/productProfileImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/adv1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:background="@color/overlay"
+        android:padding="@dimen/cellText_padding">
+        <TextView
+            android:id="@+id/productProfileTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:text="الشركه الرئيسية"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="12sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:id="@+id/productProfilePrice"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:gravity="left"
+                android:text="250 EGP"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:gravity="right"
+                android:layout_marginLeft="15dp"
+                android:text="السعر"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

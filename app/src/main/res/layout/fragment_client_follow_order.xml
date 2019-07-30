@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtClientFollowOrder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.4"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/cellText_padding"
+        android:textColor="@color/hintColor"
+        android:textSize="@dimen/cellText_textSize" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgFollowOrder1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:contentDescription="TODO" android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/imgFollowOrder2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:contentDescription="TODO" android:scaleType="fitXY" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent" android:contentDescription="TODO" 
+        android:layout_height="0dp"
+        android:layout_weight="0.5" />
+
+</LinearLayout>

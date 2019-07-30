@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/f_bk"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent" android:contentDescription="TODO" 
+        android:layout_height="0dp"
+        android:layout_weight="0.45" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.45"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp" android:contentDescription="TODO" 
+            android:layout_height="match_parent"
+            android:layout_weight="0.2" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent" android:contentDescription="TODO" 
+                android:layout_height="0dp"
+                android:layout_weight="0.03" />
+
+            <!-- EditText UserName -->
+            <EditText
+                android:id="@+id/etShopUserName"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.14"
+                android:background="@drawable/edittextbg"
+                android:gravity="center"
+                android:hint="@string/username"
+                android:inputType="text"
+                android:textColor="@color/white"
+                android:textColorHint="@color/hintColor" />
+
+            <ImageView
+                android:layout_width="match_parent" android:contentDescription="TODO" 
+                android:layout_height="0dp"
+                android:layout_weight="0.03" />
+
+            <!-- EditText Password -->
+            <EditText
+                android:id="@+id/etShopPassword"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.14"
+                android:background="@drawable/edittextbg"
+                android:gravity="center"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textColor="@color/white"
+                android:textColorHint="@color/hintColor" />
+
+            <ImageView
+                android:layout_width="match_parent" android:contentDescription="TODO" 
+                android:layout_height="0dp"
+                android:layout_weight="0.06" />
+
+            <!-- Button Sign in -->
+            <Button
+                android:id="@+id/btnShopSignin"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:background="@drawable/btnbg"
+                android:text="@string/btnLogin"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:layout_width="match_parent" android:contentDescription="TODO" 
+                android:layout_height="0dp"
+                android:layout_weight="0.11" />
+
+            <!-- Text Sign up -->
+            <TextView
+                android:id="@+id/txtShopSignup"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.14"
+                android:gravity="center"
+                android:text="@string/txtRegister"
+                android:textColor="@color/hintColor" />
+
+            <ImageView
+                android:layout_width="match_parent" android:contentDescription="TODO" 
+                android:layout_height="0dp"
+                android:layout_weight="0.15" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp" android:contentDescription="TODO" 
+            android:layout_height="match_parent"
+            android:layout_weight="0.2" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent" android:contentDescription="TODO" 
+        android:layout_height="0dp"
+        android:layout_weight="0.1" />
+
+</LinearLayout>

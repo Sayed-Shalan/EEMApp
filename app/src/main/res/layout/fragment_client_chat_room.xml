@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/chat_background"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/client_message_linear"
+
+        >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+        <TextView
+            android:id="@+id/no_messagesTxt"
+            android:layout_width="wrap_content"
+            android:visibility="invisible"
+            android:layout_height="wrap_content"
+            android:text="لا يوجد رسائل حاليا"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/client_message_linear"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_alignParentBottom="true"
+        >
+        <EditText
+            android:id="@+id/etClientMessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_small"
+            android:background="@drawable/rounded_rect_bg"
+            android:hint="اكتب الرساله ..."
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:imeOptions="actionSend"
+            android:inputType="text"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:padding="@dimen/padding_small" />
+        <FrameLayout
+            android:id="@+id/etClientMessageSendBtn"
+            android:layout_width="35dp"
+            android:layout_gravity="center"
+            android:layout_height="35dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/primary_circle"
+            >
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_gravity="center"
+            android:layout_height="15dp"
+            android:background="@drawable/primary_circle"
+            android:contentDescription="TODO"
+            android:src="@drawable/ic_right_arrow_white"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

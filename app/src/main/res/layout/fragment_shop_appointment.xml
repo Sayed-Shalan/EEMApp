@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <CalendarView
+        android:id="@+id/cldShopAppointment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4" />
+
+    <ImageView
+        android:layout_width="match_parent" android:contentDescription="TODO" 
+        android:layout_height="0dp"
+        android:layout_weight="0.03" />
+
+    <EditText
+        android:id="@+id/etShopAppointment"
+        android:layout_width="match_parent" android:inputType="" 
+        android:layout_height="0dp"
+        android:layout_gravity="top"
+        android:layout_weight="0.2"
+        android:background="@drawable/edittextbg"
+        android:gravity="top"
+        android:hint="@string/etAppointment" />
+
+    <ImageView
+        android:layout_width="match_parent" android:contentDescription="TODO" 
+        android:layout_height="0dp"
+        android:layout_weight="0.07" />
+
+    <Button
+        android:id="@+id/btnAddShopAppointment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@drawable/btnbg"
+        android:text="@string/addbtn"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:layout_width="match_parent" android:contentDescription="TODO" 
+        android:layout_height="0dp"
+        android:layout_weight="0.2" />
+
+</LinearLayout>

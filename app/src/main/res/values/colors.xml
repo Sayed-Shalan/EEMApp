@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#636363</color>
+    <color name="colorPrimaryDark">#721818</color>
+    <color name="colorAccent">#d50100</color>
+    <color name="bgColor">#ff4141</color>
+    <color name="hintColor">#a3a1a1</color>
+    <color name="white">#FFF</color>
+    <color name="txtTitleColor">#fff</color>
+    <color name="barBg">#a3a1a1</color>
+    <color name="tabRed">#cd2028</color>
+    <color name="overlay">#80000000</color>
+    <color name="textColor">#ffffff</color>
+    <color name="gray_f2">#C0C0C0</color>
+    <color name="black">#000000</color>
+
+    <color name="mycolorPrimary">#ad2626</color>
+    <color name="mycolorPrimaryDark">#721818</color>
+</resources>

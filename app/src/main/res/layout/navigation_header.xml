@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+    <FrameLayout
+        android:layout_gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:background="@drawable/user_navigation_header_gradient"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/homes_white"
+        android:contentDescription="@string/app_name"/>
+    <TextView
+        android:id="@+id/user_navigation_header_userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="150dp"
+        android:textColor="@color/white"
+        android:gravity="left"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="bottom|left"
+
+
+        />
+    <FrameLayout
+        android:layout_gravity="bottom"
+        android:layout_width="100dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_height="100dp">
+        <ImageView
+            android:id="@+id/user_navigation_view_header_imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:minWidth="100dp"
+            android:minHeight="100dp"
+            android:maxHeight="100dp"
+            android:maxWidth="100dp"
+            android:contentDescription="@string/app_name"
+            />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/image_border"
+            android:contentDescription="@string/app_name"/>
+    </FrameLayout>
+
+</FrameLayout>

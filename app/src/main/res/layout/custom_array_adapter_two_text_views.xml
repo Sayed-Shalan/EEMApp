@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:background="@color/white"
+    android:gravity="right"
+    android:layout_height="40dp"
+    >
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="185dp"
+        android:layout_height="match_parent"
+        android:textColor="@android:color/darker_gray"
+        android:background="@android:color/transparent"
+        android:gravity="right|center_vertical"
+        android:layout_marginRight="165dp"
+        android:text="طنطا"
+        android:drawablePadding="15dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,221 @@
+<resources>
+    <string name="app_name">EEMAPP</string>
+
+    <!-- Buttons -->
+    <string name="btnLogin">دخول</string>
+    <string name="btnRegister">تسجيل</string>
+    <string name="txtRegister">لست عضوا سجل الان !</string>
+    <string name="btnContinue">تاكيد البيانات</string>
+
+    <!-- Login -->
+    <string name="username">اسم المستخدم</string>
+    <string name="password">كلمه المرور</string>
+
+    <!-- Login -->
+    <string name="shoplogin">Login as a shop</string>
+    <string name="serviceslogin">Login as a services</string>
+    <string name="clientlogin">Go to eem app</string>
+
+    <!-- Shop -->
+    <!-- Register Shop -->
+    <string name="shopownername">اسم صاحب المحل</string>
+    <string name="shopownermail">البريد الالكترونى الخاص بك</string>
+    <string name="shopownerusername">اسم المستخدم</string>
+    <string name="shopownerpassword">كلمه المرور</string>
+    <string name="shopownerpasswordconfirm">تاكيد كلمه المرور</string>
+
+    <!-- Shop Continue Data -->
+    <string name="shopcategory">اختر نشاط المحل</string>
+    <string name="shopname">ادخل اسم المحل</string>
+    <string name="shopaddress">ادخل عنوان المحل</string>
+    <string name="shopphone">ادخل رقم الموبايل</string>
+    <string name="shopimage">اختر صوره المحل</string>
+
+    <!-- Shop Product -->
+    <string name="productdepartment">قسم المنتح</string>
+    <string name="productname">اسم المنتج</string>
+    <string name="buyprice">سعر الشراء</string>
+    <string name="sellprice">سعر البيع</string>
+    <string name="avialableQuantity">الكميه المتاحه</string>
+    <string name="productdesc">وصف المنتج</string>
+    <string name="uploadproductimage">اضافه صوره المنتج</string>
+    <string name="productavialablenotification">الكميه المتاحه لمستخدمين eem</string>
+    <string name="productreservaiton">الحجز</string>
+    <string name="productdeliver">التوصيل</string>
+    <string name="productimage">صوره المنتج</string>
+    <string name="addproduct">اضافه المنتج</string>
+    <string name="editproduct">تعديل المنتج</string>
+    <string name="now">الآن</string>
+    <string name="two_seconds">ثانيتين</string>
+    <string name="one_second">ثانية</string>
+    <string name="seconds">ثوانى</string>
+    <string name="two_minutes">دقيقتين</string>
+    <string name="two_hours">ساعتين</string>
+    <string name="yesterday">أمس</string>
+    <string name="in">في</string>
+    <string name="since">منذ</string>
+    <string name="hours">ساعات</string>
+
+    <string name="day">يوم</string>
+    <string name="hour">ساعة</string>
+    <string name="minute">دقيقة</string>
+    <string name="minutes">دقائق</string>
+
+    <!-- Shop Offer -->
+    <string name="offersellprice">سعر البيع</string>
+    <string name="offersaleprice">سعر الخصم</string>
+    <string name="questionSale">هل انت متاكد من انك تريد اضافه العرض ؟</string>
+    <string name="questionPercentage">نسبه الخصم سوف تكون : </string>
+    <string name="salePercentage">نسبه الخصم : </string>
+    <string name="questionYes">نعم</string>
+    <string name="questionNo">لا</string>
+    <string name="offerMessge">لتقم بعمل عرض يجب ان يكون سعر الخصم اقل من سعر البيع</string>
+
+    <!-- Shop Others -->
+    <string name="deliverNo">التوصيل : لا</string>
+    <string name="deliverYes">التوصيل : نعم</string>
+    <string name="reservationNo">الحجز : لا</string>
+    <string name="reservationYes">الحجز : نعم</string>
+    <string name="productData">بيانات المنتج</string>
+    <string name="deleteMessage">هل انت متاكد انك تريد مسح هذا المنتج ؟</string>
+    <string name="deleteOffer">هل انت متاكد انك تريد مسح هذا العرض ؟</string>
+    <string name="deleteOfferAll">هل انت متاكد انك تريد مسح جميع العروض ؟</string>
+    <string name="departmentSaleTitle">مبيعات القسم</string>
+    <string name="pOrderName">اسم المنتج : </string>
+    <string name="pOrderUser">اسم العميل : </string>
+    <string name="pOrderQuantity">الكميه : </string>
+    <string name="pOrderCode">كود الطلب : </string>
+    <string name="pOrderTotal">السعر الكلى : </string>
+    <string name="chooseCity">من فضلك اختر المدينه!</string>
+    <string name="editPData">بيانات شخصيه</string>
+    <string name="editSData">بيانات المحل</string>
+    <string name="editshopimage">تعديل صوره المحل</string>
+    <string name="editproductimage">تعديل صوره المنتج</string>
+    <string name="sellPriceTitle">سعر البيع :</string>
+    <string name="buyPriceTitle">سعر الشراء :</string>
+
+    <string name="gpsMessage">Please Open Gps To Register Your Current Data</string>
+    <string name="gpsError">Cannot Update your Location because your gps is not enabled</string>
+
+    <string name="selectCity">المدينه</string>
+    <string name="selectMall">المول</string>
+
+    <string name="open">مفتوح</string>
+    <string name="close">مغلق</string>
+
+    <!-- Shop Drawer Data -->
+    <string name="drawerReport">تقارير</string>
+    <string name="drawerSetting">الاعدادات</string>
+    <string name="drawerState">المحل : </string>
+    <string name="drawerUpdate">الموقع</string>
+    <string name="drawerChat">الرسائل</string>
+    <string name="drawerReservation">الحجز</string>
+    <string name="drawerCustomerServices">خدمه العملاء</string>
+    <string name="drawerChangePassword">تغير كلمه المرور</string>
+    <string name="drawerLogout">تسجيل خروج</string>
+
+    <!-- Shop Order -->
+    <string name="shopOrderComplete">تم الانتهاء من الطلب</string>
+    <string name="shopOrderCancel">تم الغاء الطلب</string>
+
+    <!-- Drawer Data -->
+    <string name="updatelocation">تعديل مكان المحل</string>
+    <string name="shopopen">المحل مفتوح او مغلق</string>
+
+    <!-- Shop Appointment -->
+    <string name="etAppointment">اكتب ملحوظه للمواعيد ....</string>
+
+    <!-- Shop Pages -->
+    <string name="adddepartment">اضافه قسم جديد</string>
+    <string name="addcategory">اضافه نشاط جديد</string>
+    <string name="departmentname">ادخل اسم القسم</string>
+    <string name="addbtn">اضافه</string>
+    <string name="editbtn">تعديل</string>
+
+    <string name="categoryMessage">هل انت متاكد انك تريد مسح هذا النشاط ؟</string>
+    <string name="departmentMessage">هل انت متاكد انك تريد مسح هذا القسم ؟</string>
+    <string name="connectionMessage">توجد مشكله بالانترنت حاول مره اخرى</string>
+
+    <!-- Report Pages -->
+    <string name="reportdept">تقرير مبيعات الاقسام</string>
+    <string name="reportproduct">تقرير مبيعات المنتجات</string>
+    <string name="reportreservation">تقرير الحجز</string>
+    <string name="reportoffers">تقرير مبيعات العروض</string>
+    <string name="etNewPassword">اكتب كلمه المرور الجديده</string>
+    <string name="etConfirmNewPassword">اعد كاتبه كلمه المرور</string>
+
+    <!-- Title -->
+    <string name="name">اسم المنتج</string>
+    <string name="dept">قسم المنتح</string>
+    <string name="quantity">الكميه</string>
+    <string name="reservation">عدد الحجز</string>
+    <string name="sell">سعر البيع</string>
+    <string name="buy">سعر الشراء</string>
+    <string name="saleprice">سعر الخصم</string>
+    <string name="salepercentage">نسبه الخصم</string>
+    <string name="editDepartment">تعديل اسم القسم</string>
+
+    <!-- Messages -->
+    <string name="emptydata">من فضلك اكمل البيانات الفارغه</string>
+    <string name="confirmpass">كلمه السر غير مطابقه</string>
+    <string name="emptydepartment">من فضلك اختر القسم</string>
+    <string name="emptyimage">من فضلك اختر صوره المنتج</string>
+
+    <!-- Header Data -->
+    <string name="category">النشاط</string>
+    <string name="product">منتجات</string>
+    <string name="offer">تخفيضات</string>
+    <string name="appointment">مواعيد</string>
+    <string name="live">عرض مباشر</string>
+    <string name="department">اقسام</string>
+    <string name="addDepartment">اضافه قسم</string>
+
+    <!-- User -->
+    <string name="confirm">تاكيد كلمه المرور</string>
+    <string name="phone">رقم التليفون</string>
+    <string name="email">البريد الالكترونى</string>
+
+    <!-- Reservation -->
+    <string name="shipProduct">Shipping With EEM</string>
+    <string name="reservationProduct">Reservation Request</string>
+
+
+    <!-- Follow Order -->
+    <string name="followOrderId">Order Id</string>
+    <string name="followOrderCode">Order Code</string>
+    <string name="followOrderState">Order State</string>
+
+
+    <!-- Button -->
+    <string name="loading">تحميل ...</string>
+    <string name="waiting">انتظر من فضلك ...</string>
+    <string name="delete">مسح</string>
+    <string name="edit">تعديل</string>
+    <string name="sale">تخفيض</string>
+    <string name="cancel">الغاء</string>
+
+    <string name="noData">لا يوجد بيانات</string>
+
+    <!-- Category -->
+    <string name="shop">محل تجارى</string>
+    <string name="services">خدمه</string>
+    <string name="client">مشترى</string>
+    <string name="hintCategory">دخول ...</string>
+
+
+    <!-- Chatting -->
+    <string name="type_a_message">Type a message...</string>
+
+
+    <!-- FaceBook -->
+    <string name="facebook_app_id">248253129080231</string>
+    <string name="fb_login_protocol_scheme">fb248253129080231</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="mssgs">الرسائل</string>
+    <string name="your_orders">طلباتك</string>
+    <string name="edit_data">تعديل البيانات</string>
+    <string name="home">الرئيسية</string>
+    <string name="share_app">مشاركة التطبيق</string>
+    <string name="face_provider">com.facebook.app.FacebookContentProvider{1827582240868042}</string>
+</resources>

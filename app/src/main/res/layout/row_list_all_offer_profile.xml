@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/gridView_cellWidth"
+    android:layout_height="@dimen/gridView_cellHeight"
+    android:layout_marginTop="5dp">
+
+    <ImageView
+        android:id="@+id/photoViewOfferProfile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/adv1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:background="@color/overlay"
+        android:padding="@dimen/cellText_padding">
+        <TextView
+            android:id="@+id/textViewOfferProfiletitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:text="الشركه الرئيسية"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/textViewOfferProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:text="300 EGP"
+            android:textSize="12sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:id="@+id/textViewOfferProfileSalePercent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:gravity="left"
+                android:text="300 %"
+                android:textSize="9sp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:gravity="right"
+                android:text="نسبة الخصم"
+                android:textSize="9sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:id="@+id/textViewOfferProfileAfterSale"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:gravity="left"
+                android:text="250 EGP"
+                android:textSize="9sp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:gravity="right"
+                android:layout_marginLeft="15dp"
+                android:text="السعر بعد الخصم"
+                android:textSize="9sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

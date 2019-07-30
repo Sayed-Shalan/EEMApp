@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/f_bk"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent" android:contentDescription="TODO" 
+        android:layout_height="0dp"
+        android:layout_weight="0.5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp" android:contentDescription="TODO" 
+            android:layout_height="match_parent"
+            android:layout_weight="0.1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent" android:contentDescription="TODO" 
+                android:layout_height="0dp"
+                android:layout_weight="0.05" />
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/spCategory"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:hint="@string/hintCategory"
+                app:met_floatingLabel="normal" />
+
+            <!-- Client
+            <Button
+                android:id="@+id/btnClient"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:background="@drawable/ic_cat"
+                android:gravity="center"
+                android:text="@string/clientlogin"
+                android:textColor="@color/hintColor" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.05" />-->
+
+            <!-- Shop
+            <Button
+                android:id="@+id/btnShop"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:background="@drawable/ic_cat"
+                android:gravity="center"
+                android:text="@string/shoplogin"
+                android:textColor="@color/hintColor" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.05" />-->
+
+            <!-- Services
+            <Button
+                android:id="@+id/btnServices"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:background="@drawable/ic_cat"
+                android:gravity="center"
+                android:text="@string/serviceslogin"
+                android:textColor="@color/hintColor" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1" /> -->
+
+            <ImageView
+                android:layout_width="match_parent" android:contentDescription="TODO" 
+                android:layout_height="0dp"
+                android:layout_weight="0.7" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp" android:contentDescription="TODO" 
+            android:layout_height="match_parent"
+            android:layout_weight="0.1" />
+
+    </LinearLayout>
+
+</LinearLayout>
